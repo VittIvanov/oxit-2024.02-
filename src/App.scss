@@ -1,0 +1,13 @@
+.App {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.App_container {
+  max-width: 360px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 641px) {}
+}

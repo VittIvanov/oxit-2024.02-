@@ -1,0 +1,14 @@
+// src/styles/main.scss
+
+//  normalize.css
+@import '~normalize.css/normalize.css';
+
+// переменные цветов
+@import './solorVariables';
+
+// обертки(помощники)
+@import '../helpers/visuallyHidden.css';
+
+// стили компонентов
+@import '../App.scss';
+@import'../header/mainHeader.module.css';

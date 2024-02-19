@@ -1,0 +1,14 @@
+.App-header {
+  height: 46px;
+  border: 2px solid gold;
+  outline-offset: -2px;
+}
+
+/* .main-header__logo {} */
+
+.header-logo__img {
+  margin: 8px 0;
+  height: 24px;
+  border: 2px solid green;
+  outline-offset: -2px;
+}

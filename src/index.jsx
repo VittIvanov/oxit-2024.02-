@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/main.css'; // скомпилированный CSS файл
+import './styles/main.scss'; // скомпилированный CSS файл
 // import './index.css';
 import App from './App.jsx';
 
