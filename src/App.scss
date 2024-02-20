@@ -4,10 +4,22 @@
 }
 
 .App_container {
-  max-width: 360px;
+  min-width: 360px;
   margin: auto;
   align-items: center;
   text-align: center;
 
-  @media screen and (max-width: 641px) {}
+  padding: 5px 24px;
+
+  border: 2px solid red;
+  border-radius: 18px;
+
+  @media screen and (min-width: 641px) {
+    max-width: 640px;
+  }
+
+  @media screen and (min-width:700px) {
+    max-width: 360px;
+
+  }
 }

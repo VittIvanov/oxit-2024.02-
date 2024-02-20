@@ -1,0 +1,91 @@
+.main-header {
+  position: relative;
+  height: 46px;
+  min-width: 360px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-logo__img {
+  position: fixed;
+  top: 8px;
+  left: calc(50% - 55px);
+  /* Расположение логотипа в правом углу */
+  margin: 8px 0;
+  height: 24px;
+}
+
+.droplist_burger-menu {
+  cursor: pointer;
+  /* Расположение бургера в правом углу */
+}
+
+.bar {
+  width: 25px;
+  height: 4px;
+  background-color: $grey-color;
+  /* Необходимо убедиться, что $grey-color определен в ваших переменных */
+  border-radius: 2px;
+  margin: 5px 0;
+}
+
+.droplist_menu {
+  display: none;
+  /* Скрываем меню по умолчанию */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 159px;
+  width: 166px;
+  border: 2px solid #5E5E5E;
+  border-radius: 0 18px 0 18px;
+  position: absolute;
+  /* Изменяем позиционирование на абсолютное */
+  top: -7px;
+  /* Расположение меню под шапкой */
+  right: -26px;
+  /* Расположение меню в правом углу */
+  background: radial-gradient(circle, #3a3a38, #1c1c1b);
+  // rgb(235, 235, 235)
+  /* Цвет фона меню */
+  z-index: 999;
+  /* Позволяет меню отображаться поверх других элементов */
+  padding: 10px;
+  /* Отступы внутри меню */
+}
+
+.droplist_in_burger-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 14px;
+  /* Настройка отступа от верхнего края */
+  margin-right: 22px;
+  /* Настройка отступа от правого края */
+}
+
+.droplist_in_burger-menu .bar {
+  background-color: #969696;
+}
+
+.droplist_menu li {
+  margin-bottom: 10px;
+  /* Отступ между элементами меню */
+}
+
+.droplist_menu li:last-child {
+  margin-bottom: 0;
+  /* Убираем отступ после последнего элемента */
+}
+
+.droplist_menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* При смене состояния бургерного меню */
+.droplist_menu.active {
+  display: block;
+  /* Показываем меню при наличии класса .active */
+}
