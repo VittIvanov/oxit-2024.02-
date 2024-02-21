@@ -1,4 +1,6 @@
 .main-header {
+  border: 2px solid yellow;
+  outline-offset: -2px;
   position: relative;
   height: 46px;
   min-width: 360px;
@@ -33,7 +35,7 @@
 .droplist_menu {
   display: none;
   /* Скрываем меню по умолчанию */
-  list-style-type: none;
+
   padding: 0;
   margin: 0;
   height: 159px;
@@ -63,23 +65,30 @@
   /* Настройка отступа от верхнего края */
   margin-right: 22px;
   /* Настройка отступа от правого края */
+  cursor: pointer;
 }
 
 .droplist_in_burger-menu .bar {
   background-color: #969696;
 }
 
-.droplist_menu li {
-  margin-bottom: 10px;
+.droplist_menu__list {
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.droplist_menu__item {
+  text-align: right;
+  margin-bottom: 15px;
   /* Отступ между элементами меню */
 }
 
-.droplist_menu li:last-child {
+.droplist_menu__item:last-child {
   margin-bottom: 0;
   /* Убираем отступ после последнего элемента */
 }
 
-.droplist_menu li a {
+.droplist_menu__item a {
   text-decoration: none;
   color: inherit;
 }

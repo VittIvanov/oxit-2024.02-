@@ -6,9 +6,13 @@
 // переменные цветов
 @import './solorVariables';
 
+// Шрифты:
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 // обертки(помощники)
+
 @import '../helpers/visuallyHidden.css';
 
 // стили компонентов
 @import '../App.scss';
-@import'../header/mainHeader.module.scss';
+@import '../header/mainHeader.module.scss';
+@import '../mainTitle/mainTitle.module.scss'
