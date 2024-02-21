@@ -17,8 +17,6 @@ function App() {
 
         <MainTitle />
 
-        {/* <p className='visually-hidden'>We  focus on Extended Reality, industrial visualization, autonomous robotics, computer vision, and AI. </p> */}
-
         <Navigation />
 
         <CompanyInfo />

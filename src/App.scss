@@ -2,8 +2,12 @@
   background-color: $background-color;
   color: $font-color;
   font-family: "Anton", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
+
+  * {
+    font-weight: 200;
+  }
 }
 
 .App_container {
